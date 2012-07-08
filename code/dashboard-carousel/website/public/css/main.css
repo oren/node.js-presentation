@@ -1,0 +1,16 @@
+body {
+  margin: 0px;
+  background-color: black;
+}
+
+iframe {
+  border: none;
+}
+
+iframe.hidden {
+  display: hidden;
+}
+
+frame {
+  background-color: black;
+}
