@@ -1,14 +1,13 @@
 var config = {
 
-  screenshotServiceUrl: 'http://0.0.0.0:4000/',
-  interval: 0.5, //minutes
+  screenshotServiceUrl: 'http://0.0.0.0:3000/',
+  interval: 1, //minutes
   urls: {
-    1: 'http://datadash.wc1.yellowpages.com:3072/tube',
-    2: 'http://searchdash.prod.wc1.yellowpages.com:3072/tube',
-    3: 'http://webdashboard.prod.wc1.yellowpages.com/summary/buzz',
-    4: 'http://webdash.np.wc1.yellowpages.com:3000/summary/itl'
+    1: 'www.google.com',
+    2: 'www.nodejs.org',
+    3: 'www.github.com',
+    4: 'www.yellowpages.com'
   },
-  tmpImagesPath: '../website/public/reports/tmp/',
   imagesPath: '../website/public/reports/'
 
 }

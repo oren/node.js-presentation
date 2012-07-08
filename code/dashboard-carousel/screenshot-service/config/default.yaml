@@ -1,7 +1,0 @@
-browser:
-  command: phantomjs
-  viewport:
-    width:    1024
-    height:   600
-tmpdir: '/tmp'
-port: 4000
