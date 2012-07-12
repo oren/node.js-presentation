@@ -2,6 +2,7 @@ var express = require('express')
 var routes = require('./routes');
 var environment = process.env.NODE_ENV || 'development';
 var config = require('./config/' + environment + '.js');
+var port = process.env.PORT || config.port;
 config.interval = config.interval * 1000; //we want seconds
 
 var app = module.exports = express.createServer();
@@ -31,5 +32,5 @@ app.configure('production', function(){
 // Routes
 require('./routes/site')(app);
 
-app.listen(config.port);
-console.log("Dashboards server listening on port %d in %s mode", app.address().port, app.settings.env);
+app.listen(port);
+console.log("Dashboards server listening on port %d in %s mode", port, app.settings.env);
