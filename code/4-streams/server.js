@@ -1,5 +1,6 @@
 // stream an image from the disk or from a remote server (EC2, etc) 
-// show the buffer in the data event
+// 1. show the buffer in the data event
+// 2. use request package to get image from remote server
 
 var http = require('http');
 var fs = require('fs');
