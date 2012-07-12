@@ -3,6 +3,7 @@ module.exports = function(app){
     res.header('Content-Type', 'text/javascript');
     res.send("var config = " + JSON.stringify(app.settings.config));
   });
+
   app.get('/', function(req, res) {
     res.sendfile('index.html');
   });

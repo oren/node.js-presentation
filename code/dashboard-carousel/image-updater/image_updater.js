@@ -6,6 +6,7 @@ var fs   = require('fs');
 // npm packages
 var request = require('request');
 
+// configs
 var environment = process.env.NODE_ENV || 'development';
 var config = require('./config/' + environment + '.js');
 var interval = config.interval * 1000 * 60; //we want minutes
@@ -24,7 +25,7 @@ function createImage(screenshotService, webpage, index) {
 
 createImages();
 
-// every 5 minutes
+// default - every 5 minutes
 setInterval(function() {
   createImages();
 }, interval);
