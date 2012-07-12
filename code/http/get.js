@@ -1,7 +1,8 @@
+// http get  using request 
+// using twitter api
+
 var request = require('request');
 var fs = require('fs');
-
-// get request using request 
 
 request('http://search.twitter.com/search.json?q=node.js', function (error, response, body) {
   if (!error && response.statusCode == 200) {
@@ -14,5 +15,5 @@ request('http://search.twitter.com/search.json?q=node.js', function (error, resp
 
 
 // stream image 
-request('http://mcgonnigle.files.wordpress.com/2007/07/coonbig.jpg').pipe(fs.createWriteStream('cat.png'))
+// request('http://mcgonnigle.files.wordpress.com/2007/07/coonbig.jpg').pipe(fs.createWriteStream('cat.png'))
 

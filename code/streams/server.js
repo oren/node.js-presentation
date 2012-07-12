@@ -1,4 +1,5 @@
 // stream an image from the disk or from a remote server (EC2, etc) 
+// show the buffer in the data event
 
 var http = require('http');
 var fs = require('fs');
