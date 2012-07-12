@@ -1,5 +1,7 @@
 // http post using the built-in http library
 
+// talk about security vulnerability - js injection
+
 var https = require('https');
 var querystring = require('querystring');
 
@@ -29,6 +31,7 @@ var req = https.request(options, function(res) {
   });
 
   res.on('end', function () {
+    var foo = eval('(' + data + ')');
     console.log('response', data);
   });
 

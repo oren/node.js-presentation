@@ -13,8 +13,11 @@ var options = {
 function uploadImages(){ 
   console.log(new Date().toUTCString(), ' - uploading images');
   scp.send(options, function (err) {
-      if (err) console.log(err);
-        else console.log('File transferred.');
+      if (err) { 
+        console.log(err);
+      } else {
+        console.log('done.');
+      }
   });
 }
 

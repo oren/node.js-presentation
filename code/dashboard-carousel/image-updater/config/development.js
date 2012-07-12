@@ -8,7 +8,7 @@ var config = {
     3: 'www.github.com',
     4: 'www.yellowpages.com'
   },
-  imagesPath: '../website/public/reports/'
+  imagesPath: '/tmp/images/'
 
 }
 

@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
   <link rel="" href="bootstrap/css/bootstrap-responsive.css">
+  <link rel="stylesheet" href="./main.css">
   <title>NodeJS + Socket.io</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
                 <span class="icon-bar"></span>
             </a>
             <!-- Be sure to leave the brand out there if you want it shown -->
-            <a class="brand" href="/">Dashboard</a>
+            <a class="brand" href="/">Chat - socket.io demo</a>
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse" style="height:0px;">
                 <!-- .nav, .navbar-search, .navbar-form, etc -->
@@ -38,21 +39,15 @@
         <div class="row-fluid">
             <div class="span3">
                 <form class="well" id="chat" >
-                    <label>Twitter filter</label>
-                    <input type="text" id="data" class="span2" placeholder="Add a Twitter tracker…">
-                    <span class="help-inline">Submit an additional tracker!</span>
-                    <button type="submit" class="btn" onclick="addTrack(); return false;" >Submit</button>
+                    <label>say something</label>
+                    <input type="text" id="data" class="span2">
+                    <button type="submit" class="btn" onclick="say(); return false;" >Submit</button>
                 </form>
-                <div class="well">
-                    <p>Twitter stream tracker(s):</p>
-                    <div id="tracker">
-                    </div>
-                </div>
             </div>
             <div class="span9">
-                <div class="well" id="twitter-stream">
-            	  <ul class="unstyled">
-        	      </ul>
+                <div class="well" id="twitter-stream" >
+                  <textarea id="chat-box" rows="5" cols="70">
+                  </textarea>
                 </div>
             </div>
         </div>
