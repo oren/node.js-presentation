@@ -8,54 +8,55 @@
   <title>NodeJS + Socket.io</title>
 </head>
 <body>
-    <div class="container-fluid">
-    <div class="navbar">
-        <div class="navbar-inner">
-            <div class="container">
-            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <!-- Be sure to leave the brand out there if you want it shown -->
-            <a class="brand" href="/">Chat - socket.io demo</a>
-            <!-- Everything you want hidden at 940px or less, place within here -->
-            <div class="nav-collapse collapse" style="height:0px;">
-                <!-- .nav, .navbar-search, .navbar-form, etc -->
-                <ul class="nav">
-                  <li class="active">
-                    <a href="" target="_blank" title="Node.js News web site"></a>
-                  </li>
-                  <li class="divider-vertical"></li>
-                  <li class="">
-                    <a href="" target="_blank" title="IT Wars yet another Geek"></a>
-                  </li>
-                </ul>
-            </div>
-            </div>
-        </div>
-    </div>
-        <div class="row-fluid">
-            <div class="span3">
-                <form class="well" id="chat" >
-                    <label>say something</label>
-                    <input type="text" id="data" class="span2">
-                    <button type="submit" class="btn" onclick="say(); return false;" >Submit</button>
-                </form>
-            </div>
-            <div class="span9">
-                <div class="well" id="twitter-stream" >
-                  <textarea id="chat-box" rows="5" cols="70">
-                  </textarea>
-                </div>
-            </div>
-        </div>
-    </div>
-<script src="/socket.io/socket.io.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="/myscript.js"></script>
-<script src="/bootstrap/js/bootstrap-alert.js"></script>
-<script src="/bootstrap/js/bootstrap-collapse.js"></script>
+
+  <div class="container-fluid">
+  <div class="navbar">
+      <div class="navbar-inner">
+          <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Chat - socket.io demo</a>
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse" style="height:0px;">
+              <!-- .nav, .navbar-search, .navbar-form, etc -->
+              <ul class="nav">
+                <li class="active">
+                  <a href="" target="_blank" title="Node.js News web site"></a>
+                </li>
+                <li class="divider-vertical"></li>
+                <li class="">
+                  <a href="" target="_blank" title="IT Wars yet another Geek"></a>
+                </li>
+              </ul>
+          </div>
+          </div>
+      </div>
+  </div>
+      <div class="row-fluid">
+          <div class="span3">
+              <form class="well" id="chat" >
+                  <label>say something</label>
+                  <input type="text" id="data" class="span2">
+                  <button type="submit" class="btn" onclick="say(); return false;" >Submit</button>
+              </form>
+          </div>
+          <div class="span9">
+              <div class="well" id="twitter-stream" >
+                <textarea id="chat-box" rows="5" cols="70">
+                </textarea>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="/myscript.js"></script>
+  <script src="/bootstrap/js/bootstrap-alert.js"></script>
+  <script src="/bootstrap/js/bootstrap-collapse.js"></script>
+
 </body>
 </html>

@@ -1,5 +1,7 @@
 #chat-box {
   width: 800px;
   height: 600px;
-
+  font-size: 40px;
+  padding: 10px;
+  line-height: 46px;
 }
