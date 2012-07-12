@@ -4,5 +4,8 @@ forever     - auto restart the server if it crashes
 mocha       - the rising star testing framework
 express     - sinatra-like framework (but with the adoption level of rails)
 socket.io   - real time stuff
+dnode       - call remote function that live in a different process/server (+ callbacks work)
+
+everything from @substack. the guy is a machine.
 
 

@@ -20,7 +20,7 @@ function createImages(){
 }
 
 function createImage(screenshotService, webpage, index) {
-  request(screenshotService + webpage).pipe(fs.createWriteStream(index + '.png'))
+  request(screenshotService + webpage).pipe(fs.createWriteStream(config.imagesPath + index + '.png'))
 };
 
 createImages();
