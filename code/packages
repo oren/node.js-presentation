@@ -1,7 +1,7 @@
 nvm         - installing node
 supervisor  - no need to restart server while developing
 forever     - auto restart the server if it crashes
-mocha       - the most loved testing framework
+mocha       - the rising star testing framework
 express     - sinatra-like framework (but with the adoption level of rails)
 socket.io   - real time stuff
 
