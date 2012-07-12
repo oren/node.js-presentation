@@ -10,6 +10,8 @@ socket.on("disconnect", function() {
 });
 
 socket.on('message', function(data) {
+  console.log(data);
+
   var oldText = $('#chat-box').text();
   var newText = '';
   console.log(oldText);

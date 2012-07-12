@@ -22,7 +22,12 @@ io.set('log level', 1);
 
 io.sockets.on('connection', function(socket) {
   socket.on('data', function(data) {
+    console.log(data);
     io.sockets.emit('message', data);
   });
 });
+
+
+// io.sockets.emit = broadcast
+// socket.emit = to one socket
 
