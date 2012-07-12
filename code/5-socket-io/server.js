@@ -11,7 +11,7 @@ app.get('/', function(req, res, next){
   res.render('/public/index.html');
 });
 
-app.listen(4000);
+app.listen(3001);
 console.log('Server running at http://localhost:3001/');
 
 
