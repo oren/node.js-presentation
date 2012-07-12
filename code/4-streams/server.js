@@ -3,7 +3,7 @@
 
 var http = require('http');
 var fs = require('fs');
-var requestImage = require('request');
+// var requestImage = require('request'); // uncomment to use the request package
  
 // request is a readable stream (event emitter with data, end and close events)
 // response is a writable stream (event emitter with the close event)
@@ -16,17 +16,6 @@ http.createServer(function (request, response) {
 }).listen(3001);
  
 console.log('Server running at http://localhost:3001/');
-
-
-
-
-
-
-
-
-
-
-
 
 
 
