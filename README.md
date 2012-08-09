@@ -1,3 +1,5 @@
+[Video](http://www.youtube.com/watch?v=B33xK6nXQtc&feature=plcp) of my talk at Yellow Pages
+
 node.js or how I learned to stop worrying and love the node
 ===========================================================
 
