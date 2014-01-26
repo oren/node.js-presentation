@@ -1,9 +1,7 @@
 How I learned to stop worrying and love the Node
 ===========================================================
 
-Video of my talk at Yellow Pages
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/1RW9bxQ1EXI" frameborder="0" allowfullscreen></iframe>
+[Video](http://www.youtube.com/watch?v=B33xK6nXQtc&feature=plcp) of my talk at Yellow Pages
 
 ![node.js presentation](http://i.imgur.com/Fe0by.jpg?1)
 
